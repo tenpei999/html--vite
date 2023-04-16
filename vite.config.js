@@ -1,6 +1,7 @@
 import sass from 'sass';
 import { defineConfig } from "vite";
 import liveReload from 'vite-plugin-live-reload';
+import tailwindcss from "tailwindcss";
 import autoprefixer from "autoprefixer";
 import postcssNesting from "postcss-nesting";
 import sassGlobImports from 'vite-plugin-sass-glob-import';
@@ -65,6 +66,7 @@ export default defineConfig({
 			plugins: [
 				postcssNesting,
 				autoprefixer,
+				tailwindcss,
 			],
 		},
 	},
